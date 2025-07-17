@@ -1,8 +1,11 @@
 import React from 'react'
 
-const EndScreem = () => {
+const EndScreem = ({retryGame}) => {
   return (
-    <div>EndScreem</div>
+    <>
+      <div>EndScreem</div>
+      <button onClick={retryGame}>Retry Game</button>
+    </>
   )
 }
 

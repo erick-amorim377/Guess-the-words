@@ -1,8 +1,11 @@
 import React from 'react'
 
-const GameSreem = () => {
+const GameSreem = ({verifyLetter}) => {
   return (
-    <div>GameSreem</div>
+    <>
+      <div>GameSreem</div>
+      <button onClick={verifyLetter}>Game Over</button>
+    </>
   )
 }
 
