@@ -1,13 +1,13 @@
-//css
+//css;
 import './App.css';
 
-//data
+//data;
 import { wordsList } from "./data/words";
 
-//react
+//react;
 import { useCallback, useState, useEffect } from 'react';
 
-//componets
+//componets;
 import StartScreem from './componets/StartScreem/StartScreem';
 import GameSreem from './componets/GameScreem/GameSreem';
 import EndScreem from './componets/EndScreem/EndScreem';
@@ -23,17 +23,38 @@ function App() {
   const [gameStage, setGameStage] = useState(stages[0].name);
   const [words] = useState(wordsList);
 
+  const [pikedWord, setPikedWord] = useState("");
+  const [pikedCategory, setPikedCategory] = useState("");
+  const [pikedLetters, setPikedLetters] = useState("");
+
+  const pikedWordAndCategory = ()=>{
+    
+    const categories = Object.keys(words);
+    
+    //pick a random category
+    const category = categories[Math.floor(Math.random() * Object.keys(categories).length)];
+
+    //pick a random word from the category
+
+    const word = words[category][Math.floor(Math.random() * words[category].length)];
+
+
+    console.log(category);
+    console.log(word);
+  };
+
   const startGame = ()=>{
     setGameStage(stages[1].name);
-  }
+    pikedWordAndCategory();
+  };
 
   const verifyLetter = () => {
     setGameStage(stages[2].name);
-  }
+  };
 
   const retryGame = () => {
-    setGameStage(stages[0].name)
-  }
+    setGameStage(stages[0].name);
+  };
 
   return (
     <>
