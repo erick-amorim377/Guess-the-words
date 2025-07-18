@@ -9,7 +9,7 @@ import { useCallback, useState, useEffect } from 'react';
 
 //componets;
 import StartScreem from './componets/StartScreem/StartScreem';
-import GameSreem from './componets/GameScreem/GameSreem';
+import GameSreem from './componets/GameScreem/GameScreem';
 import EndScreem from './componets/EndScreem/EndScreem';
 
 
