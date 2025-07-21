@@ -25,7 +25,7 @@ function App() {
 
   const [pikedWord, setPikedWord] = useState("");
   const [pikedCategory, setPikedCategory] = useState("");
-  const [pikedLetters, setPikedLetters] = useState("");
+  const [pikedLetters, setPikedLetters] = useState([]);
 
   const pikedWordAndCategory = ()=>{
     
@@ -36,16 +36,34 @@ function App() {
 
     //pick a random word from the category
 
-    const word = words[category][Math.floor(Math.random() * words[category].length)];
+    const wordL = words[category][Math.floor(Math.random() * words[category].length)];
 
 
     console.log(category);
-    console.log(word);
+    console.log(wordL);
+
+    return {wordL, category}
   };
 
-  const startGame = ()=>{
+  const startGame = () =>{
+      const { wordL, category} = pikedWordAndCategory();
+
+      let wordLetters = wordL.split("");
+      wordLetters = wordLetters.map((l) => l.toLowerCase());
+      
+      
+      console.log(wordL, category);
+      console.log(wordLetters);
+     
+      setPikedCategory(category);
+      setPikedLetters(wordLetters);
+      setPikedWord(wordL);
+     
+
+
+
     setGameStage(stages[1].name);
-    pikedWordAndCategory();
+
   };
 
   const verifyLetter = () => {
@@ -60,7 +78,17 @@ function App() {
     <>
     <div className='App'>
       {gameStage === "start" && <StartScreem startGame={startGame}/>}
-      {gameStage === "game" && <GameSreem  verifyLetter={verifyLetter}/>}
+
+      {gameStage === "game" && <GameSreem  
+      verifyLetter={verifyLetter}
+      pikedCategory={pikedCategory}
+      pikedLetters={pikedLetters}
+      pikedWord={pikedWord}
+      
+      
+      />}
+
+
       {gameStage === "end" && <EndScreem retryGame={retryGame}/>}
     </div>
       

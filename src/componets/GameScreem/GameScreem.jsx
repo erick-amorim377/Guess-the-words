@@ -1,7 +1,7 @@
 import React from 'react'
 import './GameScreem.css'
 
-const GameSreem = ({verifyLetter}) => {
+const GameSreem = ({verifyLetter, pikedCategory, pikedLetters, pikedWord}) => {
   return (
     <div className="game">
 
@@ -13,8 +13,10 @@ const GameSreem = ({verifyLetter}) => {
 
       <h1>Guess the word:</h1>
       <h3 className="tip">
-        Tip about the word: <span>Tip...</span>
+        Tip about the word: <span>{pikedCategory}</span>
       </h3>
+
+      <p>you have xxx attempts</p>
 
 
       <div className="containerWord">
@@ -26,7 +28,7 @@ const GameSreem = ({verifyLetter}) => {
         <p>Try to guess a letter of the word: </p>
         <form>
           <input type="text" name='letter' maxLength='1' required/>
-          <button>Play</button>
+          <button onClick={verifyLetter}>Play</button>
 
         </form>
       </div>
