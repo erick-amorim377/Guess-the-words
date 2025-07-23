@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import './GameScreem.css'
 
-const GameSreem = ({verifyLetter, pikedCategory, pikedLetters, pikedWord}) => {
+const GameSreem = ({verifyLetter, pikedCategory, pikedLetters, pikedWord, guessedLetters, wrongLetters, guesses, score}) => {
+  const [letter, setLetter] = useState("");
+  const letterInputRef = useRef(null);
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    verifyLetter(letter)
+
+    setLetter("");
+    letterInputRef.current.focus();
+
+
+  }
+  
   return (
     <div className="game">
 
 
       <p className="points">
-        <span>Score: 000</span>
+        <span>Score: {score}</span>
       </p>
 
 
@@ -16,26 +30,28 @@ const GameSreem = ({verifyLetter, pikedCategory, pikedLetters, pikedWord}) => {
         Tip about the word: <span>{pikedCategory}</span>
       </h3>
 
-      <p>you have xxx attempts</p>
+      <p>you have {guesses} attempts</p>
 
 
       <div className="containerWord">
-        <span className="letter">A</span>
-        <span className="blankSquare"></span>
+        {pikedLetters.map((pikedLetters, i)=> (
+          guessedLetters.includes(pikedLetters) ? (<span key={i} className="letter">{pikedLetters}</span> ) : ( <span key={i} className="blankSquare"></span>))
+        )}
       </div>
 
       <div className="letterContainer">
         <p>Try to guess a letter of the word: </p>
-        <form>
-          <input type="text" name='letter' maxLength='1' required/>
-          <button onClick={verifyLetter}>Play</button>
+
+
+        <form onSubmit={handleSubmit}>
+          <input type="text" name='letter' maxLength='1' required onChange={(e) => setLetter(e.target.value)} value={letter} ref={letterInputRef}/>
+          <button>Play</button>
 
         </form>
       </div>
       <div className="worngLetterConteiner">
         <p>used letters:</p>
-        <span>a,</span>
-        <span>b,</span>
+        {wrongLetters.map((pikedLetters, i) => <span key={i}>{pikedLetters}, </span>)}
       </div>
 
 
