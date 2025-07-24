@@ -1,11 +1,13 @@
 import React from 'react'
+import './EndScreem.css'
 
-const EndScreem = ({retryGame}) => {
+const EndScreem = ({retryGame, score}) => {
   return (
-    <>
-      <div>Game Over</div>
+    <div className='endGame'>
+      <h1>Game Over</h1>
+      <h2>your score is: <span>{score}</span></h2>
       <button onClick={retryGame}>Retry Game</button>
-    </>
+    </div>
   )
 }
 
