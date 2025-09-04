@@ -60,6 +60,8 @@ function App() {
       setPikedCategory(category);
       setPikedLetters(wordLetters);
       setPikedWord(wordL);
+
+      console.log(wordLetters)
      
 
 
@@ -102,13 +104,15 @@ function App() {
 
   useEffect(()=>{
       const uniqueLetters = [...new Set(pikedLetters)];
-
-    if(guessedLetters.length === uniqueLetters.length) { 
+      
+    if(uniqueLetters.length > 0){
+      if(guessedLetters.length === uniqueLetters.length) { 
       console.log(uniqueLetters)
+      console.log(guessedLetters)
       setScore((actualScore) => actualScore += 100);
     
       startGame();
-    }
+    }}
     
   },[guessedLetters])
     

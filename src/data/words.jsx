@@ -1,14 +1,14 @@
 export const wordsList = {
-    carro: ["Motor", "Porta", "Capó", "Pneu", "Volante", "Gasolina", "Oleo"],
-    Frutas: ["maça", "Banana", "Pera", "Mamão", "Laranja", "Melancia", "Morango"],
-    corpo: ["Braço", "perna", "Cérebro", "Pescoço", "Olhos", "Nariz", "Dedos"],
-    computador: ["Teclado", "Mouse", "Monitor", "Gabinete", "Fonte", "SSD", "RAM"],
-    progamação: ["Fremework", "JavaScript", "React", "PHP", "CSS", "Java", "HTML"],
-    alimento: ["Ovo", "Bife", "Frango", "Strogonoff", "Macarão", "Lasanha", "Pão"],
-    jogos: ["Minecraft", "Tetris", "Mario", "Zelda", "Overwatch", "Sonic", "Pokemon"],
-    bebida: ["Cerveja", "Vinho", "Agua", "Suco", "Cafe", "Refrigerante", "Caipirinha"],
-    natureza: ["arvora", "nuvem", "grama", "inseto", "terra", "Rio", "Flores", "Estrela"],
-    escola: ["lápis", "Caneta", "Estojo", "Caderno", "Borracha", "Quadro", "Professor"],
-    animais: ["Pato", "Cavalo", "Cachorro", "Gato", "Macaco", "Girafa", "Urso", "Pinguin"],
-    ferramenta: ["Philips", "Fenda", "Furadeira", "Makita", "Trena", "Parafusadeira", "Serra"]
+    car: ["Engine", "Door", "Hood", "Tire", "Steering Wheel", "Gasoline", "Oil"],
+    Fruits: ["apple", "banana", "pear", "papaya", "orange", "watermelon", "strawberry"],
+    Body: ["arm", "leg", "brain", "neck", "eyes", "nose", "fingers"],
+    Computer: ["keyboard", "mouse", "monitor", "case", "power supply", "ssd", "ram"],
+    Programming: ["Fremework", "JavaScript", "React", "PHP", "CSS", "Java", "HTML"],
+    Food: ["egg", "steak", "chicken", "stroganoff", "pasta", "lasagna", "bread"],
+    Games: ["minecraft", "tetris", "mario", "zelda", "overwatch", "sonic", "pokemon"],
+    Drink: ["beer", "wine", "water", "juice", "Coffee", "Soda", "Caipirinha"],
+    nature: ["tree", "cloud", "grass", "insect", "earth", "river", "flowers", "star"],
+    school: ["pencil", "pen", "pencil case", "notebook", "eraser", "board", "teacher"],
+    animals: ["duck", "horse", "dog", "cat", "monkey", "giraffe", "bear", "penguin"],
+    tool: ["Philips", "screwdriver", "drill", "Makita", "tape measure", "screwdriver", "saw"]
 }
