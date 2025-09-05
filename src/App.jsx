@@ -61,7 +61,6 @@ function App() {
       setPikedLetters(wordLetters);
       setPikedWord(wordL);
 
-      console.log(wordLetters)
      
 
 
@@ -107,8 +106,6 @@ function App() {
       
     if(uniqueLetters.length > 0){
       if(guessedLetters.length === uniqueLetters.length) { 
-      console.log(uniqueLetters)
-      console.log(guessedLetters)
       setScore((actualScore) => actualScore += 100);
     
       startGame();
