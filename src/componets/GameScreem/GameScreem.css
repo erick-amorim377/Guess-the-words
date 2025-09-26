@@ -12,9 +12,8 @@
 }
 
 .containerWord {
-    width: 75vw;
-    max-width: 80vw;
-    /* margin: 1.5em auto; */
+
+    margin: 1.5em auto;
     padding: 0.3em;
     border: 7px solid #ecfa00;
     display: flex;
@@ -52,4 +51,16 @@
 
 }
 
-
+@media screen and (max-width:500px){
+    
+    .containerWord {
+    
+    max-width: 80vw;
+    
+    }
+    .letter, .blankSquare {
+    font-size: 50px;
+    height: 70px;
+    width: 70px;
+    }
+}

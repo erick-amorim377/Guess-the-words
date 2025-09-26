@@ -1,12 +1,85 @@
-# React + Vite
+# GUESS THE WORDS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+This is a word guessing game, inspired by the classic letter-by-letter mechanic. The player must try to guess the secret word by selecting letters from the alphabet. Each correct guess reveals the letter in its proper position, while incorrect guesses count as failed attempts. The challenge is to complete the word before running out of tries!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
 
-## Expanding the ESLint configuration
+This project was developed to practice React and explore the use of React Hooks for state and component logic management.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-Built with React + Hooks (useState, useEffect, useRef)
+-Clean and responsive interface
+-Letter-by-letter guessing mechanic
+
+
+## Result  ✨
+
+![mobile view](./src/assets/mobile.png)
+
+<details>
+<summary> <h2>Versão Desktop</h2></summary>
+
+![desktop view](./src/assets/desktop.png)
+
+</details>
+
+
+## Made with 🔨
+
+- HTML
+- CSS
+- JAVASCRIPT
+- REACT
+
+
+
+## Running locally
+
+### Prerequisites
+
+- Node.js (v16 or later)
+- npm (v8 or later)
+
+### Step by Step
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/erick-amorim377/Guess-the-words.git
+```
+
+
+2.  Install the dependencies:
+
+
+```bash
+npm install
+```
+
+
+3.  Start the development server:
+
+
+```bash
+npm run dev
+```
+
+Open your browser and visit `http://localhost:3000` ✨✨
+
+## Use
+
+1.  **start the game:** Click on the "START PLAYING" button to start the game
+2.  **view the hint and the number of attempts:** After entering the game screen, it is important to know the hint and the number of attempts.
+3.  **choose a letter:** based on the hint think of a letter and put it in the field and press "PLAY" to find out if that letter is part of the secret word.
+4.  **cumulative score:** accumulate the maximum number of points, knowing that you earn 100 points for each correct word.
+
+
+
+---
+
+#### Author 👷
+
+
+<img src="https://avatars.githubusercontent.com/u/96181493?s=400&u=c829a1186480e41fcd32e3b2178dd81c651f4947&v=4" width=120 />
+
+[Erick Amorim](https://www.linkedin.com/in/erick-amorim-365326265)
