@@ -1,55 +1,59 @@
 # GUESS THE WORDS
 
+Este é um jogo de adivinhação de palavras, inspirado na clássica mecânica de letra por letra.  
+O jogador deve tentar descobrir a palavra secreta escolhendo letras do alfabeto.  
+Cada acerto revela a letra na posição correta, enquanto os erros contam como tentativas falhas.  
+O desafio é completar a palavra antes que as tentativas acabem!  
 
-This is a word guessing game, inspired by the classic letter-by-letter mechanic. The player must try to guess the secret word by selecting letters from the alphabet. Each correct guess reveals the letter in its proper position, while incorrect guesses count as failed attempts. The challenge is to complete the word before running out of tries!
+## 📌 Sobre
 
-## About
+Este projeto foi desenvolvido para praticar **React** e explorar o uso de **React Hooks** no gerenciamento de estados e lógica de componentes.  
 
-This project was developed to practice React and explore the use of React Hooks for state and component logic management.
+- Construído com React + Hooks (`useState`, `useEffect`, `useRef`)  
+- Interface limpa e responsiva  
+- Mecânica de adivinhação letra por letra  
 
--Built with React + Hooks (useState, useEffect, useRef)
--Clean and responsive interface
--Letter-by-letter guessing mechanic
+---
 
-
-## Result  ✨
+## ✨ Resultado
 
 ![mobile view](./src/assets/mobile.png)
 
 <details>
-<summary> <h2>Versão Desktop</h2></summary>
+<summary><h2>Versão Desktop</h2></summary>
 
 ![desktop view](./src/assets/desktop.png)
 
 </details>
 
+---
 
-## Made with 🔨
+## 🛠️ Feito com
 
-- HTML
-- CSS
-- JAVASCRIPT
-- REACT
+- HTML  
+- CSS  
+- JavaScript  
+- React  
 
+---
 
+## 🚀 Executando localmente
 
-## Running locally
+### ✅ Pré-requisitos
 
-### Prerequisites
+- Node.js (v16 ou superior)  
+- npm (v8 ou superior)  
 
-- Node.js (v16 or later)
-- npm (v8 or later)
+### ▶️ Passo a passo
 
-### Step by Step
-
-1. Clone this repository:
+1. Clone este repositório:
 
 ```bash
 git clone https://github.com/erick-amorim377/Guess-the-words.git
-```
 
 
-2.  Install the dependencies:
+
+2.  Instale as dependências:
 
 
 ```bash
@@ -57,27 +61,27 @@ npm install
 ```
 
 
-3.  Start the development server:
+3.  Inicie o servidor de desenvolvimento:
 
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit `http://localhost:3000` ✨✨
+Abra o navegador e acesse: `http://localhost:3000` ✨✨
 
-## Use
+## Como jogar
 
-1.  **start the game:** Click on the "START PLAYING" button to start the game
-2.  **view the hint and the number of attempts:** After entering the game screen, it is important to know the hint and the number of attempts.
-3.  **choose a letter:** based on the hint think of a letter and put it in the field and press "PLAY" to find out if that letter is part of the secret word.
-4.  **cumulative score:** accumulate the maximum number of points, knowing that you earn 100 points for each correct word.
+1.  **Iniciar o jogo:**  Clique no botão "START PLAYING" para começar.
+2.  **Ver dica e tentativas:** Observe a dica e o número de tentativas disponíveis.
+3.  **Escolher uma letra** Digite uma letra no campo e pressione "PLAY" para verificar se ela faz parte da palavra secreta.
+4.  **Pontuação acumulada:** Ganhe 100 pontos por cada palavra correta e tente bater seu recorde!
 
 
 
 ---
 
-#### Author 👷
+#### Autor 👷
 
 
 <img src="https://avatars.githubusercontent.com/u/96181493?s=400&u=c829a1186480e41fcd32e3b2178dd81c651f4947&v=4" width=120 />
